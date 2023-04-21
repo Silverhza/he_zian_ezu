@@ -153,7 +153,7 @@ class CourseDetail(LoginRequiredMixin, PermissionRequiredMixin, DetailView):
 class CourseCreate(LoginRequiredMixin, PermissionRequiredMixin, CreateView):
     form_class = CourseForm
     model = Course
-    ermission_required = 'courseinfo.add_course'
+    permission_required = 'courseinfo.add_course'
 
 
 class CourseUpdate(LoginRequiredMixin, PermissionRequiredMixin, UpdateView):
